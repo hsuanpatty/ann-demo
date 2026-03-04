@@ -198,11 +198,11 @@
     display: inline-block;
     background: #00b900;
     color: #ffffff;
-    padding: 12px 30px;
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     transition: background 0.3s;
 }
 
