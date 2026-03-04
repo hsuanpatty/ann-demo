@@ -206,6 +206,8 @@
     font-weight: bold;
     font-size: 15px;
     transition: background 0.3s;
+
+    margin-top: 10px;
 }
 
 .new-line p {
@@ -219,7 +221,25 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    #b_article_main {
+        margin-top: 140px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    #b_article_main {
+        margin-top: 95px;
+    }
+}
+
+
 @media (max-width: 575.98px) {
+    #b_article_main {
+        margin-top: 90px;
+    }
+
     .ann-box h2 {
         justify-content: left;
     }
