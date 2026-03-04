@@ -13,11 +13,11 @@ $(document).ready(function () {
     } else if (windowWidth >= 992) { // 平板大
       subMenuMargin = isNotice ? 58 : 22;
       headerTop = isNotice ? 48 : 0;
-    } else if (windowWidth >= 798) { // 平板小
+    } else if (windowWidth >= 769) { // 平板小
       subMenuMargin = isNotice ? 58 : 8;
       headerTop = isNotice ? 48 : 0;
-    } else { // 手機板
-      subMenuMargin = isNotice ? 70 : 8;
+    } else { // 手機板 <798px
+      subMenuMargin = isNotice ? 70 : 20; // 加大 marginTop 避免遮蔽
       headerTop = isNotice ? 60 : 0;
     }
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
   // 關閉公告
   $("#close-bar").on("click", function () {
-    $("#announcement-bar").slideUp(100, function () { // 更快
+    $("#announcement-bar").slideUp(100, function () {
       adjustSubMenu(); // header top 立刻回 0
     });
   });
