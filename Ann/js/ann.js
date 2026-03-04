@@ -44,7 +44,7 @@ $(document).ready(function () {
           height: pushyHeight
         })
         .stop(true, true)
-        .animate({ top: pushyMargin + "px" }, 100);
+        .animate({ top: pushyMargin + "px" }, 400);
     } else {
       $(".pushy-right").css({
         top: "",
