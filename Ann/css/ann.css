@@ -87,18 +87,27 @@
 
   .announcement-content {
     line-height: 1.3;
+    letter-spacing: 0;
   }
 
 }
+
 
 @media (max-width: 575.98px) {
   .announcement-container .ann-container {
     padding: 16px 10px;
+    letter-spacing: 0.1rem;
+    
+  }
+
+  .announcement-content {
+    line-height: 1.2;
   }
 }
 
-@media (max-width: 375.98px) {
+@media (max-width: 480.98px) {
   .announcement-container .ann-container {
     padding: 11px 10px;
+    font-size: 17px;  
   }
 }
