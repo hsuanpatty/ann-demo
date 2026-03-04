@@ -3,7 +3,9 @@ $(document).ready(function () {
     const windowWidth = $(window).width();
     const isNotice = $("#announcement-bar").is(":visible");
 
+    // =========================
     // 桌面 / 平板 marginTop & header top
+    // =========================
     let subMenuMargin = 8;
     let headerTop = 0;
 
@@ -16,24 +18,36 @@ $(document).ready(function () {
     } else if (windowWidth >= 769) { // 平板小
       subMenuMargin = isNotice ? 58 : 8;
       headerTop = isNotice ? 48 : 0;
-    } else { // 手機板 <798px
-      subMenuMargin = isNotice ? 70 : 20; // 加大 marginTop 避免遮蔽
+    } else { // 手機板 <769px
+      subMenuMargin = isNotice ? 70 : 20;
       headerTop = isNotice ? 60 : 0;
     }
 
     $(".sub_menu").stop(true, true).animate({ marginTop: subMenuMargin + "px" }, 100);
     $("#header").stop(true, true).css("position", "fixed").animate({ top: headerTop + "px" }, 100);
 
+    // =========================
     // 手機 pushy-right
+    // =========================
     if (windowWidth <= 1199) {
       let pushyHeight = "100%";
       let pushyMargin = 0;
-      if (windowWidth <= 575) {
-        pushyHeight = isNotice ? "auto" : "100%";
-        pushyMargin = isNotice ? 62 : 0;
-      } else {
-        pushyHeight = isNotice ? "auto" : "100%";
-        pushyMargin = isNotice ? 51 : 0;
+
+      if (windowWidth <= 375) {
+           pushyHeight = isNotice ? "auto" : "100%";
+        pushyMargin = isNotice ? 63 : 0;
+      } else if (windowWidth <= 425) {
+           pushyHeight = isNotice ? "auto" : "100%";
+        pushyMargin = isNotice ? 64 : 0;
+      } else if (windowWidth <= 575) {
+           pushyHeight = isNotice ? "auto" : "100%";
+        pushyMargin = isNotice ? 60 : 0;
+      } else if (windowWidth <= 769) {
+           pushyHeight = isNotice ? "auto" : "100%";
+        pushyMargin = isNotice ? 60 : 0;
+      } else { // 770 ~ 1199
+           pushyHeight = isNotice ? "auto" : "100%";
+        pushyMargin = isNotice ? 70 : 0;
       }
 
       $(".pushy-right")
@@ -44,7 +58,7 @@ $(document).ready(function () {
           height: pushyHeight
         })
         .stop(true, true)
-        .animate({ top: pushyMargin + "px" }, 400);
+        .animate({ top: pushyMargin + "px" }, 350);
     } else {
       $(".pushy-right").css({
         top: "",
