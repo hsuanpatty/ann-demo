@@ -221,4 +221,8 @@
     .ann-box h2 {
         justify-content: left;
     }
+
+    .aviation-box {
+         padding: 30px 20px;
+    }
 }
