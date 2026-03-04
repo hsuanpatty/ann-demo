@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    line-height: 30px;
 }
 
 .ann-box p {
@@ -56,7 +57,7 @@
     display: inline-block;
     font-weight: bold;
     margin-bottom: 10px;
-    padding: 2px 12px;
+    padding: 6px 12px;
 }
 
 .ann-mofa-title {
@@ -87,7 +88,7 @@
     display: inline-block;
     font-weight: bold;
     margin-bottom: 10px;
-    padding: 2px 12px;
+    padding: 6px 12px;
 }
 
 .ann-mofa-title2 {
@@ -120,7 +121,7 @@
     font-size:14px; 
     font-weight:bold; 
     margin-bottom:10px;
-    padding:2px 12px
+    padding:6px 12px
 }
 
 .ann-right-title {
@@ -132,7 +133,8 @@
 
 .ann-mofa-left p,
 .ann-mofa-middle p,
-.ann-mofa-right p {
+.ann-mofa-right p,
+.ann-mofa h3 {
     line-height: 25px;
     letter-spacing: 0.1rem;
 }
@@ -210,6 +212,12 @@
 
 @media (max-width: 1200.98px) {
     #b_article_main {
-    margin-top: 95px;
+        margin-top: 95px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ann-box h2 {
+        justify-content: left;
     }
 }
