@@ -454,6 +454,14 @@
 ========================= */
 @media (max-width: 1199.98px) {
   .cancel-box { grid-template-columns: repeat(2, 1fr); }
+  
+    .product-card,
+    .product-card-2,
+    .product-card-3 {
+        width: 100%;
+        max-width: 400px;
+    }
+
   .notes {
     flex-direction: column;
     text-align: left;
@@ -465,6 +473,12 @@
 
 @media (max-width: 768px) {
   .cancel-box { grid-template-columns: 1fr; padding: 0 15px; }
+  
+  .product-card,
+  .product-card-2,
+  .product-card-3 {
+    max-width: 340px;
+  }
 }
 
 
