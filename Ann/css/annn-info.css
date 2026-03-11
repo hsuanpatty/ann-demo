@@ -505,33 +505,38 @@
 
 /* 手機版調整 */
 @media (max-width: 768px) {
-  .cancel-box {
-    grid-template-columns: 1fr;
-    padding: 0 6px;
-    margin: 30px 0 0;
-  }
+    .cancel-box {
+        grid-template-columns: 1fr;
+        padding: 0 6px;
+        margin: 30px 0 0;
+    }
 
-  .cancel-frame h2 {
-    text-align: center;
-    line-height: 35px;
-  }
+    .cancel-frame h2 {
+        text-align: center;
+        line-height: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
 
-  .cancel-frame h3 {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 0;
-  }
+    .cancel-frame h3 {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 0;
+    }
 
-  .ann-mofa-right .add-to-cart-btn {
-    width: 100%;
-  }
+    .ann-mofa-right .add-to-cart-btn {
+        width: 100%;
+    }
 
     .notes .left {
         width: 100%;
     }
-
     .cancel-frame .add-to-cart-btn {
         width: 100%;
     }
     
+    .cancel-frame {
+        padding: 30px 0 10px;
+    }
 }
