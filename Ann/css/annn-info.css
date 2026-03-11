@@ -265,9 +265,6 @@
 
 
 /* 取消公告 */
-/* =========================
-   主框架
-========================= */
 .cancel-frame {
   background: #c93d3d;
   padding: 30px 0;
@@ -331,7 +328,7 @@
 .product-card .card-header,
 .product-card-2 .card-header,
 .product-card-3 .card-header {
-  padding: 20px 20px 10px;
+  padding: 20px;
   text-align: left;
   font-size: 20px;
   font-weight: 600;
