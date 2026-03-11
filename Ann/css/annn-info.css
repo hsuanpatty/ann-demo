@@ -305,9 +305,9 @@
 }
 
 /* 個別邊框顏色 */
-.product-card-2 { border: 3px solid #ffb7b7; }      /* 紅色 */
-.product-card { border: 3px solid #ffcc81; }    /* 橘色 */
-.product-card-3 { border: 3px solid #999999; }    /* 灰色 */
+.product-card-2 { border: 2px solid #ffb7b7; }      /* 紅色 */
+.product-card { border: 2px solid #ffcc81; }    /* 橘色 */
+.product-card-3 { border: 2px solid #999999; }    /* 灰色 */
 
 /* card-header 共用 */
 .product-card .card-header,
